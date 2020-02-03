@@ -1,0 +1,156 @@
+*, *::before, *::after{
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+}
+html{
+    background-color:grey;
+
+}
+/*header-start*/
+.wrapper{
+    max-width:940px;
+    margin:0 auto;
+    /*outline: 5px dashed red;*/
+    border:1px solid black;
+}
+
+.header{
+    width:100%;
+    height:78px;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.header__list{
+    width:390px;
+    display:flex;
+    justify-content: space-between;
+}
+
+/*header-end*/
+
+/*main-start*/
+/*slider-start*/
+
+/*big slider start*/
+.big-slider{
+    z-index:10;
+}
+.big-slider .slick-track{
+    display:flex;
+    z-index:0;
+}
+.big-slider .slick-list{
+    overflow:hidden;
+    z-index:0;
+}
+
+.big-slider-item__text-block{
+    opacity: 0.8;
+    width:415px;
+    height:125px;
+    background-color:#e8663c;
+    position:absolute;
+    z-index:100;
+    top:240px;
+    margin-left:35px;
+}
+
+@media(max-width: 961px){
+    .big-slider-item__text-block{
+        width:44vw;
+        height:13vw;
+        top:25.5vw;
+    }
+}
+/*big slider end*/
+
+/*small slider start*/
+.slider{
+    overflow:hidden;
+    margin-top:15px;
+    margin-bottom:40px;
+}
+
+.slider .slick-track{
+    display:flex;    
+    justify-content: space-between;
+}
+
+/*.slider .slider-item{
+    width:140px !important;
+}*/
+
+/*arrows-start*/
+.main{
+    position:relative;
+}
+
+.slider-arrows{
+    position:absolute;
+    /*top:30vw;*/
+    top:140px;
+    z-index:20;
+    font-size: 0px;
+    border:none;
+    outline:none;
+    
+}
+.slick-arrow-prev{
+    position:absolute;
+    left:30px;
+    width:50px;
+    height:50px;
+}
+.slick-arrow-next{
+    position:absolute;
+    left:875px;
+    width:50px;
+    height:50px;
+}
+
+@media(max-width: 961px){
+.slider-arrows{
+    top:15vw;
+}
+.slick-arrow-prev{
+    position:absolute;
+    left:30px;
+    width:50px;
+    height:50px;
+}
+.slick-arrow-next{
+    position:absolute;
+    left: calc(100vw - 80px);
+    width:50px;
+    height:50px;
+}
+
+}
+/*arrows-end*/
+
+/*small slider end*/
+
+/*slider-end*/
+
+/*features start*/
+.features{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 40px;
+    
+}
+.features-card{
+    height:250px;
+}
+
+
+
+
+
+/*features end*/
+
+
+
+/*main-end*/
