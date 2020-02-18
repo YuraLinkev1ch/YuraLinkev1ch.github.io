@@ -5,21 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Blog</title>
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/reset.css"> 
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/blog.css">
 </head>
 <body>
     <div class="wrapper">
         <!--header start -->
         <header class="header">
+            <input class="header__menu-toggle" id="header__menu-toggle"  type="checkbox" />
+            <label class="header__menu-btn" for="header__menu-toggle">
+              <span></span>
+            </label>
             <div class="header__logo">JET<span class="logo__RO">RO</span></div>
             <nav class="header__nav">
                 <ul class="header__list">
-                    <li class="header__list-item header__list-item_active"><a href="index.html">HOME</a></li>
+                    <li class="header__list-item"><a href="index.html">HOME</a></li>
                     <li class="header__list-item"><a href="about.html">ABOUT US</a></li>
-                    <li class="header__list-item"><a href="blog.html">BLOG</a></li>
-                    <li class="header__list-item"><a href="#">PORTFOLIO</a></li>
-                    <li class="header__list-item"><a href="#">CONTACT US</a></li>
+                    <li class="header__list-item header__list-item_active"><a href="blog.html">BLOG</a></li>
+                    <li class="header__list-item"><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li class="header__list-item"><a href="contact.html">CONTACT US</a></li>
                 </ul>  
             </nav>
         </header>
@@ -39,17 +45,17 @@
                 <div class="section__left-part">
                     <div class="date">
                         <span class="left-part__title">Date</span class="left-part__title"><br>
-                        <br>
+                        
                         <span class="left-part__text">April 15, 2012</span>	
                     </div>
                     <div class="tabs">
                         <span class="left-part__title">Tags</span><br>
-                        <br>
+                        
                         <span class="left-part__text">Website  |  Design</span>	
                     </div>
                     <div class="comments">
                         <span class="left-part__title"> Comments</span><br>
-                        <br>
+                        
                         <span class="left-part__text">4</span>	
                     </div>
                 </div>
@@ -70,17 +76,17 @@
                 <div class="section__left-part">
                     <div class="date">
                         <span class="left-part__title">Date</span class="left-part__title"><br>
-                        <br>
+                        
                         <span class="left-part__text">April 15, 2012</span>	
                     </div>
                     <div class="tabs">
                         <span class="left-part__title">Tags</span><br>
-                        <br>
+                        
                         <span class="left-part__text">Website  |  Design</span>	
                     </div>
                     <div class="comments">
                         <span class="left-part__title"> Comments</span><br>
-                        <br>
+                        
                         <span class="left-part__text">4</span>	
                     </div>
                 </div>
@@ -98,23 +104,24 @@
 
             <section class="section section-3">
                 <div class="decorate-icon"><img src="img/blog/decorate-icon-3.png" alt="decorate-icon-3.png"></div>
-                
-                    <iframe src="https://player.vimeo.com/video/798022" width="670" height="302" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                
+                  
+                 <div class="wrapper-iframe"><iframe class="iframe" src="https://player.vimeo.com/video/798022"  frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+
+
                 <div class="section__left-part">
                     <div class="date">
                         <span class="left-part__title">Date</span class="left-part__title"><br>
-                        <br>
+                        
                         <span class="left-part__text">April 15, 2012</span>	
                     </div>
                     <div class="tabs">
                         <span class="left-part__title">Tags</span><br>
-                        <br>
+                        
                         <span class="left-part__text">Website  |  Design</span>	
                     </div>
                     <div class="comments">
                         <span class="left-part__title"> Comments</span><br>
-                        <br>
+                        
                         <span class="left-part__text">4</span>	
                     </div>
                 </div>
@@ -130,7 +137,7 @@
              
             <section class="section section-4">
                 <div class="decorate-icon"><img src="img/blog/decorate-icon-4.png" alt="decorate-icon-4.png"></div>
-                <div class="section__quote">
+                <div class="section-4__quote">
                     <div class="orange-quote"><img src="img/blog/orange-quote.png" alt="orange-quote.png"></div>
                     <p>It was released as an open-source film under the Creative Commons Attribution 3.0 license.</p>
                 </div>
@@ -139,10 +146,10 @@
 
             <section class="section section-5">
                 <div class="decorate-icon"><img src="img/blog/decorate-icon-5.png" alt="decorate-icon-5.png"></div>
-                <div class="section__link">
-                    <h1>Some  of  the  best  freebies  on  the  web</h1>
-                    <h2>www.bestpsdfreebies.com</h2><br>
-                    <p>There you can find some of the best freebies on the web. It’s a really cool site)</p>
+                <div class="section-5__link">
+                    <h1 class="link__h1">Some  of  the  best  freebies  on  the  web</h1>
+                    <h2 class="link__h2"><a href="www.bestpsdfreebies.com">www.bestpsdfreebies.com</a></h2><br>
+                    <p class="link__p">There you can find some of the best freebies on the web. It’s a really cool site)</p>
                 </div>
             <div class="blog-decorate-element"></div>
             </section>
@@ -161,15 +168,25 @@
                     <div class="decorate-element__name">photogallery</div>
                     <div class="decorate-element__line"></div>
                 </div>
-                <div class="photos">
-                    <a class="photo" href="img/about/photogallery-1.jpg"><img src="img/about/photogallery-1.jpg" alt="photogallery-1.jpg"></a>
-                    <a class="photo" href="img/about/photogallery-2.jpg"><img src="img/about/photogallery-2.jpg" alt="photogallery-2.jpg"></a>
-                    <a class="photo" href="img/about/photogallery-3.jpg"><img src="img/about/photogallery-3.jpg" alt="photogallery-3.jpg"></a>
-                    <a class="photo" href="img/about/photogallery-4.jpg"><img src="img/about/photogallery-4.jpg" alt="photogallery-4.jpg"></a>
-                    <a class="photo" href="img/about/photogallery-5.jpg"><img src="img/about/photogallery-5.jpg" alt="photogallery-5.jpg"></a>
-                    <a class="photo" href="img/about/photogallery-6.jpg"><img src="img/about/photogallery-6.jpg" alt="photogallery-6.jpg"></a>
-                    <a class="photo" href="img/about/photogallery-7.jpg"><img src="img/about/photogallery-7.jpg" alt="photogallery-7.jpg"></a>
-                    <a class="photo" href="img/about/photogallery-8.jpg"><img src="img/about/photogallery-8.jpg" alt="photogallery-8.jpg"></a>
+                <div class="photos-50x50">
+                    <a data-fancybox="gallery"  class="photo" href="img/photogallery/full/photogallery-1.jpg"><img src="img/photogallery/thumbs/50x50/50x50-photogallery-1.jpg" alt="50x50-photogallery-1.jpg"></a>
+                    <a data-fancybox="gallery"  class="photo" href="img/photogallery/full/photogallery-2.jpg"><img src="img/photogallery/thumbs/50x50/50x50-photogallery-2.jpg" alt="50x50-photogallery-2.jpg"></a>
+                    <a  data-fancybox="gallery" class="photo" href="img/photogallery/full/photogallery-3.jpg"><img src="img/photogallery/thumbs/50x50/50x50-photogallery-3.jpg" alt="50x50-photogallery-3.jpg"></a>
+                    <a data-fancybox="gallery"  class="photo" href="img/photogallery/full/photogallery-4.jpg"><img src="img/photogallery/thumbs/50x50/50x50-photogallery-4.jpg" alt="50x50-photogallery-4.jpg"></a>
+                    <a data-fancybox="gallery"  class="photo" href="img/photogallery/full/photogallery-5.jpg"><img src="img/photogallery/thumbs/50x50/50x50-photogallery-5.jpg" alt="50x50-photogallery-5.jpg"></a>
+                    <a data-fancybox="gallery"  class="photo" href="img/photogallery/full/photogallery-6.jpg"><img src="img/photogallery/thumbs/50x50/50x50-photogallery-6.jpg" alt="50x50-photogallery-6.jpg"></a>
+                    <a data-fancybox="gallery"  class="photo" href="img/photogallery/full/photogallery-7.jpg"><img src="img/photogallery/thumbs/50x50/50x50-photogallery-7.jpg" alt="50x50-photogallery-7.jpg"></a>
+                    <a data-fancybox="gallery"  class="photo" href="img/photogallery/full/photogallery-8.jpg"><img src="img/photogallery/thumbs/50x50/50x50-photogallery-8.jpg" alt="50x50-photogallery-8.jpg"></a>
+                </div>
+                <div class="photos-200x200">
+                    <a data-fancybox="gallery"  class="photo" href="img/photogallery/full/photogallery-1.jpg"><img src="img/photogallery/thumbs/200x200/200x200-photogallery-1.jpg" alt="200x200-photogallery-1.jpg"></a>
+                    <a data-fancybox="gallery"  class="photo" href="img/photogallery/full/photogallery-2.jpg"><img src="img/photogallery/thumbs/200x200/200x200-photogallery-2.jpg" alt="200x200-photogallery-2.jpg"></a>
+                    <a  data-fancybox="gallery" class="photo" href="img/photogallery/full/photogallery-3.jpg"><img src="img/photogallery/thumbs/200x200/200x200-photogallery-3.jpg" alt="200x200-photogallery-3.jpg"></a>
+                    <a data-fancybox="gallery"  class="photo" href="img/photogallery/full/photogallery-4.jpg"><img src="img/photogallery/thumbs/200x200/200x200-photogallery-4.jpg" alt="200x200-photogallery-4.jpg"></a>
+                    <a data-fancybox="gallery"  class="photo" href="img/photogallery/full/photogallery-5.jpg"><img src="img/photogallery/thumbs/200x200/200x200-photogallery-5.jpg" alt="200x200-photogallery-5.jpg"></a>
+                    <a data-fancybox="gallery"  class="photo" href="img/photogallery/full/photogallery-6.jpg"><img src="img/photogallery/thumbs/200x200/200x200-photogallery-6.jpg" alt="200x200-photogallery-6.jpg"></a>
+                    <a data-fancybox="gallery"  class="photo" href="img/photogallery/full/photogallery-7.jpg"><img src="img/photogallery/thumbs/200x200/200x200-photogallery-7.jpg" alt="200x200-photogallery-7.jpg"></a>
+                    <a data-fancybox="gallery"  class="photo" href="img/photogallery/full/photogallery-8.jpg"><img src="img/photogallery/thumbs/200x200/200x200-photogallery-8.jpg" alt="200x200-photogallery-8.jpg"></a>
                 </div>
             </div>
         </aside>
@@ -200,11 +217,11 @@
                 e: info@psdfreebies.com
             </p>
             <div class="contacts__social-media">
-                <a class="social-media__link" href="#"><img src="img/home/social-media-icon-1-facebook.jpg" alt="social-media-icon-1-facebook.jpg"></a>
-                <a class="social-media__link" href="#"><img src="img/home/social-media-icon-2-twitter.jpg" alt="social-media-icon-2-twitter.jpg"></a>
-                <a class="social-media__link" href="#"><img src="img/home/social-media-icon-3-email.jpg" alt="social-media-icon-3-email.jpg"></a>
-                <a class="social-media__link" href="#"><img src="img/home/social-media-icon-4-rss.jpg" alt="social-media-icon-4-rss.jpg"></a>
-                <a class="social-media__link" href="#"><img src="img/home/social-media-icon-5-vimeo.jpg" alt="social-media-icon-5-vimeo.jpg"></a>
+                <a class="social-media__link" href="#"><img src="img/home/social-media-icon-1-facebook.png" alt="social-media-icon-1-facebook.jpg"></a>
+                <a class="social-media__link" href="#"><img src="img/home/social-media-icon-2-twitter.png" alt="social-media-icon-2-twitter.jpg"></a>
+                <a class="social-media__link" href="#"><img src="img/home/social-media-icon-3-email.png" alt="social-media-icon-3-email.jpg"></a>
+                <a class="social-media__link" href="#"><img src="img/home/social-media-icon-4-rss.png" alt="social-media-icon-4-rss.jpg"></a>
+                <a class="social-media__link" href="#"><img src="img/home/social-media-icon-5-vimeo.png" alt="social-media-icon-5-vimeo.jpg"></a>
             </div>
         </div>
     </footer>
@@ -213,7 +230,7 @@
     <div class="footer-decorate-element-right"></div>
 </div>
 
-
-
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
 </body>
 </html>
