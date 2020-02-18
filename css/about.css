@@ -253,13 +253,7 @@ a {
     margin-left:53px;
     padding-left:15px ;
 }
-.section-4__line{
-    height:100%;
-    width:8px;
-    background-color: black;
-    border:px solid black;
-    float:left;
-}
+
 .section-5{
     grid-column: 1 / 4 ;
 }
