@@ -138,13 +138,14 @@ a {
         transform: rotate(90deg);
     }
     #header__menu-toggle:checked~.header__nav>.header__list {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         position: absolute;
-        width: 150px;
-        min-height: 210px;
         top: 78px;
         right: 0px;
-        padding-top: 13px;
+        width: 150px;
+        min-height: 210px;
         background-color: #f3af9d;
         z-index: 100;
     }
