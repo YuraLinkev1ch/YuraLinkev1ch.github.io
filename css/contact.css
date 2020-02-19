@@ -156,15 +156,31 @@ a {
 .big-wrapper{
     display:flex;
 }
+
+/*fix-start  delete margin-right in fancybox*/
+.compensate-for-scrollbar{
+    margin-right:0 !important;
+}
+/* fix-end*/
+
 .big-wrapper>.wrapper{
     width:940px;
 }
+
 @media(max-width: 980px){
     .big-wrapper>.wrapper{
         width:100%;
     }
 }
 .main-decorate-element-left,
+.main-decorate-element-right {
+    width: calc((100% - 960px)/2);
+    height: 65px;
+    background-color: #f2ae9c;
+    display: inline-block;
+}
+
+
 .main-decorate-element-right {
     width: calc((100% - 960px)/2);
     height: 65px;
@@ -283,6 +299,7 @@ form{
     display:flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom:35px;
 }
 
 [type="text"]{

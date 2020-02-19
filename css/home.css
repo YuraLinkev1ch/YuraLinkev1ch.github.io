@@ -245,7 +245,6 @@ a {
     .features{
         padding:0 20px;
     }
-
 }
 
 @media(max-width: 648px){
@@ -258,18 +257,20 @@ a {
     margin-right:0;
    }
    .card__title{
-       font-size: 35px;
-       margin-bottom:25px;
+       display:flex;
+       flex-direction: column;
+       align-items: center;
+       font-size: 28px;
    }
    .card__picture{
-       margin-left:50%;
+       margin-left:20vw;
    }
    .card__text{
         padding:0 20px;
-        padding-top:0;
+        padding-top:30px;
         padding-bottom:40px;
        margin:0 auto;
-       font-size: 20px;
+       font-size: 18px;
    }
    .card__button-more{
     margin:0 auto;
@@ -309,14 +310,12 @@ a {
         padding-left:20px;
         
     }
-
 }
 
 .portfolio-cards{
  display:flex;
  flex-wrap: wrap;
  justify-content: space-between;
- padding:0 20px;
 }
 .portfolio-card__picture{
     width:220px;
@@ -360,6 +359,12 @@ a {
     line-height: 1.125;
 }
 
+@media(max-width: 978px){
+    .portfolio-cards{
+        padding:0 20px;
+        justify-content: space-evenly;
+    }
+}
 
 /*recent-works end*/
 

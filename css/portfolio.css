@@ -160,6 +160,7 @@ a {
 .big-wrapper {
     display: flex;
 }
+
 .big-wrapper>.wrapper{
     width:940px;
 }
@@ -255,15 +256,6 @@ main>label{
 }
 
 
-#print:checked~.portfolio-cards{
-    display:flex;
-    justify-content: flex-start;
-}
-#print:checked~.portfolio-cards>.portfolio-card{
-    margin-right: 20px;
-}
-
-
 
 #print:checked ~ .portfolio-cards>.portfolio-card:not(.portfolio-card-10):not(.portfolio-card-11)  {
     display: none;
@@ -299,13 +291,14 @@ main>label{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+}
+#print:checked~.portfolio-cards{
+    display:flex;
+    justify-content: space-evenly;
 }
 .portfolio-card__picture{
     width:220px;
     height:184px;
-    
-    
 }
 .portfolio-card{
     display:grid;

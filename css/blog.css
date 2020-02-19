@@ -159,6 +159,12 @@ a {
     display: flex;
 }
 
+/*fix-start  delete margin-right in fancybox*/
+.compensate-for-scrollbar{
+    margin-right:0 !important;
+}
+/* fix-end*/
+
 .main-decorate-element-left,
 .main-decorate-element-right {
     width: calc((100% - 960px)/2);
@@ -184,6 +190,7 @@ a {
         display: none;
     }
 }
+
 
 
 /*main-decorate-elements-end */
