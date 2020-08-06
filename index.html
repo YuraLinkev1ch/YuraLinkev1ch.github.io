@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JETRO</title>
     <link rel="stylesheet" href="css/reset.css"> 
-    <link rel="stylesheet" type="text/css" href="css/wowslider-style.css" />
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/home.css">
 </head>
@@ -36,29 +36,89 @@
     <div class="main-decorate-element-left"></div>
     <div class="wrapper">
     <!--main-start-->
-    <main class="main">   
-        <div id="wowslider-container1" class="wowslider-container1">
-            <div class="ws_images"><ul>
-                <li><img src="img/home/slide-big-1.jpg" alt="Poster<br>June 15, 2012" title="Poster<br>June 15, 2012" id="wows1_0"/></li>
-                <li><img src="img/home/slide-big-2.jpg" alt="Brochure design<br>June 15, 2012" title="Brochure design<br>June 15, 2012" id="wows1_1"/></li>
-                <li><img src="img/home/slide-big-3.jpg" alt="Web graphic element<br>June 15, 2012" title="Web graphic element<br>June 15, 2012" id="wows1_2"/></li>
-                <li><img src="img/home/slide-big-4.jpg" alt="Web graphic element<br>June 15, 2012" title="Web graphic element<br>June 15, 2012" id="wows1_3"/></li>
-                <li><img src="img/home/slide-big-5.jpg" alt="javascript photo gallery" title="Sticker design<br>June 15, 2012" id="wows1_4"/></a></li>
-                <li><img src="img/home/slide-big-6.jpg" alt="Slider plugin<br>June 15, 2012" title="Slider plugin<br>June 15, 2012" id="wows1_5"/></li>
-            </ul></div>
-            
-            <div class="ws_thumbs">
-            <div>
-                <a href="#" title="Poster June 15, 2012"><img src="img/home/slide-1.jpg" alt="" /></a>
-                <a href="#" title="Brochure design June 15, 2012"><img src="img/home/slide-2.jpg" alt="" /></a>
-                <a href="#" title="Web graphic element June 15, 2012"><img src="img/home/slide-3.jpg" alt="" /></a>
-                <a href="#" title="Web graphic element June 15, 2012"><img src="img/home/slide-4.jpg" alt="" /></a>
-                <a href="#" title="Sticker design June 15, 2012"><img src="img/home/slide-5.jpg" alt="" /></a>
-                <a href="#" title="Slider plugin June 15, 2012"><img src="img/home/slide-6.jpg" alt="" /></a>
+    <main class="main">  
+
+
+
+
+            <!-- Slider main container -->
+        <div class="swiper-container gallery-top">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide main-slide">
+                    <img src="img/home/slide-big-1.jpg" alt="slide-big-1.jpg">
+                    <div class="main-slide__info">   
+                        Poster<br>
+                        June 15, 2012
+                    </div>
+                </div>
+                <div class="swiper-slide main-slide">
+                    <img src="img/home/slide-big-2.jpg" alt="slide-big-2.jpg">
+                    <div class="main-slide__info"> 
+                        Brochure design<br>
+                        June 15, 2012
+                    </div>
+                </div>
+                <div class="swiper-slide main-slide">
+                    <img src="img/home/slide-big-3.jpg" alt="slide-big-3.jpg">
+                    <div class="main-slide__info"> 
+                        Web graphic element<br>
+                        June 15, 2012
+                    </div>
+                </div>
+                <div class="swiper-slide main-slide">
+                    <img src="img/home/slide-big-4.jpg" alt="slide-big-4.jpg">
+                    <div class="main-slide__info">   
+                        Web graphic element<br>
+                        June 15, 2012
+                    </div>
+                </div>
+                <div class="swiper-slide main-slide">
+                    <img src="img/home/slide-big-5.jpg" alt="slide-big-5.jpg">
+                    <div class="main-slide__info"> 
+                        Sticker design<br>
+                        June 15, 2012
+                    </div>
+                </div>
+                <div class="swiper-slide main-slide">
+                    <img src="img/home/slide-big-6.jpg" alt="slide-big-6.jpg">
+                    <div class="main-slide__info">
+                        Slider plugin<br>
+                        June 15, 2012
+                    </div>
+                </div>
             </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <div class="swiper-container gallery-thumbs">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/home/slide-1.jpg" alt="slide-1.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/home/slide-2.jpg" alt="slide-2.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/home/slide-3.jpg" alt="slide-3.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/home/slide-4.jpg" alt="slide-4.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/home/slide-5.jpg" alt="slide-5.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/home/slide-6.jpg" alt="slide-6.jpg">
+                    </div>
+                </div>
             </div>
-            
-        </div>	
+
+        </div>
+
 
     <!-- features start-->
     <section class="features">
@@ -152,8 +212,7 @@
     <div class="footer-decorate-element-right"></div>
 </div>
 
-<script src="js/jquery-3.4.1.min.js"></script>
-<script type="text/javascript" src="js/wowslider.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
 </body>
 </html>
