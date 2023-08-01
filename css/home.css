@@ -189,7 +189,9 @@ a {
 
 /*main-start*/
 
-
+.main {
+    position: relative;
+}
 
 
 /*swiper-start*/
@@ -206,29 +208,29 @@ a {
 .swiper-button-next{
     width:40px;
     height:40px;
+    z-index: 2;
     background-repeat: no-repeat;
     background-position:center;
-    background-size: 20px 20px;
+    background-size: contain;
+    cursor: pointer;
 }
 
 .swiper-button-prev{
     background-image: url(../img/home/slider-arrow-previous.svg);
+    left: 0;
 }
 
 .swiper-button-next{
     background-image: url(../img/home/slider-arrow-next.svg);
+    right: 0;
 }
 /*arrows-end*/
 
-.swiper-container {
+.swiper {
     width: 100%;
     height: 600px;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .swiper-slide {
-
   }
 
 .swiper-slide-dublicate-active{
@@ -250,11 +252,13 @@ a {
     height: 100%;
     width: 16.6%;
     opacity: 0.4;
+    cursor: pointer;
   }
 
   .swiper-button-next, 
   .swiper-button-prev{
-      top:40%;
+    position: absolute;
+    top:40%;
   }
 
   .gallery-thumbs .swiper-slide-thumb-active {
@@ -280,7 +284,11 @@ a {
 
       .swiper-button-next, 
       .swiper-button-prev{
-          top:50%;
+          top:38%;
+      }
+
+      .main-slide__info {
+        left:12%;
       }
   }
 /*swiper-end*/

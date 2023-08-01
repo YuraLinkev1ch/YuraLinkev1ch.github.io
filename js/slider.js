@@ -12,17 +12,18 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
     }
   });
 
-  var galleryTop = new Swiper('.gallery-top', {
-    spaceBetween: 0,
-    loop: true,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    thumbs: {
-      swiper: galleryThumbs,
-    },
-    autoplay: {
-      delay: 4000,
-    },
-  });
+var galleryTop = new Swiper('.gallery-top', {
+  spaceBetween: 0,
+  loop: true,
+  grabCursor: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  thumbs: {
+    swiper: galleryThumbs,
+  },
+  autoplay: {
+    delay: 4000,
+  },
+});
